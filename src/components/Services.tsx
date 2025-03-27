@@ -38,32 +38,43 @@ const expertiseAreas: ExpertiseArea[] = [{
 }];
 export default function Services() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
-  return <section id="expertise" className="py-24 px-4 md:px-6 bg-[#fcfcfc] dark:bg-[#0a192f]">
+
+  return (
+    <section id="expertise" className="py-24 px-4 md:px-6 bg-[#fcfcfc] dark:bg-[#0a192f]">
       <div className="container mx-auto max-w-6xl">
+        {/* Title Section */}
         <div className="text-center mb-12">
           <h2 className="text-heading-1 mb-4 animate-fade-in dark:text-[#ccd6f6]">
             Area of Expertise
           </h2>
-          <p className="text-body-large text-[#2d2d2d]/70 dark:text-[#8892b0] max-w-2xl mx-auto animate-fade-in" style={{
-          animationDelay: '0.2s'
-        }}>
+          <p className="text-body-large text-[#2d2d2d]/70 dark:text-[#8892b0] max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Specialized skills in visual storytelling and digital content creation to elevate your brand.
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8 mt-12">
-          {expertiseAreas.map((area, index) => <div key={area.id} onMouseEnter={() => setHoveredId(area.id)} onMouseLeave={() => setHoveredId(null)} style={{
-          animationDelay: `${0.1 + index * 0.1}s`
-        }} className="expertise-item group animate-fade-in px-[30px] py-[10px] mx-0">
-              <div className={`expertise-icon-wrapper ${area.color}`}>
-                <img src={area.icon} alt={area.title} className="w-8 h-8 object-contain" />
+        {/* Grid Layout for Services */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center mt-12">
+          {expertiseAreas.map((area, index) => (
+            <div 
+              key={area.id} 
+              onMouseEnter={() => setHoveredId(area.id)} 
+              onMouseLeave={() => setHoveredId(null)}
+              style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+              className="expertise-item group animate-fade-in px-6 py-4 text-center w-full max-w-[180px] md:max-w-[200px]"
+            >
+              {/* Icon Wrapper */}
+              <div className={`expertise-icon-wrapper ${area.color} flex items-center justify-center w-16 h-16 rounded-full`}>
+                <img src={area.icon} alt={area.title} className="w-10 h-10 object-contain" />
               </div>
-              
-              <h3 className="text-heading-3 mb-1 text-center text-lg font-medium dark:text-[#ccd6f6] group-hover:text-[#1d4ed8] dark:group-hover:text-[#64ffda] transition-colors duration-300">
+
+              {/* Title */}
+              <h3 className="text-heading-3 mt-3 text-lg font-medium dark:text-[#ccd6f6] group-hover:text-[#1d4ed8] dark:group-hover:text-[#64ffda] transition-colors duration-300">
                 {area.title}
               </h3>
-            </div>)}
+            </div>
+          ))}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 }

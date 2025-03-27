@@ -1,5 +1,5 @@
 
-import { ArrowUp, Linkedin, Mail, Instagram, Youtube, MapPin, Phone } from 'lucide-react';
+import { ArrowUp, Linkedin, Mail, Instagram, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -33,9 +33,7 @@ export default function Footer() {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/80 flex items-center justify-center hover:bg-white transition-colors" aria-label="Instagram">
                 <Instagram size={16} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/80 flex items-center justify-center hover:bg-white transition-colors" aria-label="YouTube">
-                <Youtube size={16} />
-              </a>
+              
             </div>
           </div>
           
@@ -53,7 +51,7 @@ export default function Footer() {
                 <a href="#portfolio" className="text-[#2d2d2d]/70 hover:text-[#1d4ed8] transition-colors link-hover inline-block">Portfolio</a>
               </li>
               <li>
-                <a href="#services" className="text-[#2d2d2d]/70 hover:text-[#1d4ed8] transition-colors link-hover inline-block">Services</a>
+                <a href="#expertise" className="text-[#2d2d2d]/70 hover:text-[#1d4ed8] transition-colors link-hover inline-block">Expertise</a>
               </li>
             </ul>
           </div>

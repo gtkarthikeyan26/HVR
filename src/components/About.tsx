@@ -48,6 +48,13 @@ export default function About() {
                 <div>
                   <h3 className="text-heading-3 mb-4">Experience</h3>
                   <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                      <CheckCircle className="text-accent-blue w-5 h-5 flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-medium">Video Editor & Creative Designer</p>
+                        <p className="text-sm text-accent-4">Mentor Match (Oct 2024 - April 2025)</p>
+                      </div>
+                    </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="text-accent-blue w-5 h-5 flex-shrink-0 mt-1" />
                       <div>
@@ -62,13 +69,7 @@ export default function About() {
                         <p className="text-sm text-accent-4">Estudio International (July 2021 - May 2024)</p>
                       </div>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="text-accent-blue w-5 h-5 flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-medium">Video Editor & Creative Designer</p>
-                        <p className="text-sm text-accent-4">Mentor Match (Oct 2024 - April 2025)</p>
-                      </div>
-                    </li>
+
                   </ul>
                 </div>
               </div>
