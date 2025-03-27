@@ -21,7 +21,7 @@ const portfolioData = {
     id: 3,
     title: "Sai Kriti's Progress",
     category: "Instagram Reel",
-    thumbnail: "https://images.unsplash.com/photo-1498077253184-99a8e3a21095?w=800&auto=format&fit=crop",
+    thumbnail: "https://images.unsplash.com/photo-1459499362902-55a20553e082?w=800&auto=format&fit=crop",
     videoUrl: "https://www.instagram.com/reel/DCl9Oosy2zl/?igsh=MTZxenp1M3F4ODdibg=="
   }, {
     id: 4,
@@ -52,7 +52,7 @@ const portfolioData = {
     id: 8,
     title: "MM Interview Feature",
     category: "YouTube",
-    thumbnail: "https://images.unsplash.com/photo-1561489404-42f13bbfc5e2?w=800&auto=format&fit=crop",
+    thumbnail: "https://images.unsplash.com/photo-1459499362902-55a20553e082?w=800&auto=format&fit=crop",
     videoUrl: "https://youtu.be/uJu_dwbpyBM"
   }, {
     id: 9,
@@ -70,14 +70,14 @@ const portfolioData = {
     id: 11,
     title: "Traditional Wear Collection",
     category: "YouTube",
-    thumbnail: "https://images.unsplash.com/photo-1469510360132-33e4d719f380?w=800&auto=format&fit=crop",
+    thumbnail: "https://images.unsplash.com/photo-1459499362902-55a20553e082?w=800&auto=format&fit=crop",
     videoUrl: "https://youtube.com/shorts/UpcKTDQiRSg"
   }],
   analysisCreativity: [{
     id: 12,
     title: "Textile Industry Overview",
     category: "Instagram",
-    thumbnail: "https://images.unsplash.com/photo-1598300188783-3b4e93d26347?w=800&auto=format&fit=crop",
+    thumbnail: "https://images.unsplash.com/photo-1459499362902-55a20553e082?w=800&auto=format&fit=crop",
     videoUrl: "https://www.instagram.com/reel/C-h34LCy5c9/?igsh=MWs4d2Fja2ZiM3Y3OQ=="
   }, {
     id: 13,

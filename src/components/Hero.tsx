@@ -11,13 +11,13 @@ export default function Hero() {
             Crafting Visual<br />Stories That Inspire
           </h1>
           
-          <p className="text-xl text-[#2d2d2d]/80 dark:text-[#8892b0] max-w-2xl mx-auto mb-10 animate-fade-in" style={{
-          animationDelay: '0.2s'
-        }}>
-            Award-winning video editor & motion graphics designer creating
-            immersive visual experiences that captivate and engage.
-          </p>
-          
+          <p className="text-xl text-gray-800 dark:text-[#8892b0] max-w-2xl mx-auto mb-10 animate-fade-in"
+  style={{ willChange: 'opacity, transform' }}
+>
+  Award-winning video editor & motion graphics designer creating 
+  immersive visual experiences that captivate and engage.
+</p>
+
           <div className="flex justify-center mt-8 animate-fade-in" style={{
           animationDelay: '0.4s'
         }}>
